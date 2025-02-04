@@ -1,0 +1,18 @@
+{
+  "name": "express-bugs",
+  "version": "1.0.0",
+  "description": "Afik's first express proj",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --ignore \".data\" server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Afik",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-bugs": "file:"
+  }
+}
