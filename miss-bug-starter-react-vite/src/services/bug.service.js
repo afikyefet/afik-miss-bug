@@ -37,3 +37,12 @@ async function save(bug) {
     return await axios.get(BASE_URL + queryStrParams)
         .then(res => res.data)
 }
+
+function getEmptyBug(){
+    return {
+        title: '',
+        description: '',
+        labels: [],
+        severity: null,
+    }
+}
