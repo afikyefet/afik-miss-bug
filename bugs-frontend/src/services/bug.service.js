@@ -3,9 +3,9 @@ import axios, { Axios } from 'axios'
 import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
 
-const axios = Axios.create({
-    withCredentials: true
-})
+// const axios = Axios.create({
+//     withCredentials: true
+// })
 
 
 const STORAGE_KEY = 'bugDB'
