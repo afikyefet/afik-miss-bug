@@ -16,6 +16,8 @@ export const bugService = {
     getById,
     save,
     remove,
+    getDefaultFilter,
+    getEmptyBug
 }
 
 
@@ -37,4 +39,17 @@ async function save(bug) {
     const { data: savedBug } = await axios.get(BASE_URL, { params: bug })
         .then(res => res.data)
     return savedBug
+}
+
+function getEmptyBug() {
+    return {
+        title: '',
+        description: '',
+        labels: [],
+        severity: null,
+    }
+}
+
+function getDefaultFilter() {
+    return { title: '', description: '', labels: [], severity: 0 }
 }
