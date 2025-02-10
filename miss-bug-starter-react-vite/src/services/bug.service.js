@@ -33,7 +33,8 @@ function remove(bugId) {
         .then(res => res.data)
 }
 async function save(bug) {
-    const queryStrParams = 'save?' + Object.keys(bug).map(key => `${key}=${bug[key]}`).join('&')
-    return await axios.get(BASE_URL + queryStrParams)
+    // const queryStrParams = 'save?' + Object.keys(bug).map(key => `${key}=${bug[key]}`).join('&')
+    const { data: savedBug } = await axios.get(BASE_URL, { params: bug })
         .then(res => res.data)
+    return savedBug
 }
