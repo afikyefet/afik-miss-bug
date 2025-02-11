@@ -9,7 +9,7 @@ import { utilService } from './util.service.js'
 
 
 const STORAGE_KEY = 'bugDB'
-const BASE_URL = 'http://localhost:3030/api/bug/'
+const BASE_URL = 'http://localhost:3333/api/bug/'
 
 export const bugService = {
     query,
@@ -23,6 +23,7 @@ export const bugService = {
 
 async function query() {
     const { data: bugs } = await axios.get(BASE_URL)
+    console.log(bugs);
 
     return bugs
 }
@@ -31,14 +32,17 @@ function getById(bugId) {
         .then(res => res.data)
 }
 function remove(bugId) {
-    return axios.get(BASE_URL + bugId + '/remove')
+    return axios.delete(BASE_URL + bugId)
         .then(res => res.data)
 }
 async function save(bug) {
-    // const queryStrParams = 'save?' + Object.keys(bug).map(key => `${key}=${bug[key]}`).join('&')
-    const { data: savedBug } = await axios.get(BASE_URL, { params: bug })
-        .then(res => res.data)
-    return savedBug
+    let response;
+    if (bug._id) {
+        response = await axios.put(BASE_URL, bug);
+    } else {
+        response = await axios.post(BASE_URL, bug);
+    }
+    return response.data;
 }
 
 function getEmptyBug() {

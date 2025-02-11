@@ -1,11 +1,12 @@
 import express from 'express'
+import { addBug, getBug, getBugs, removeBug, updateBug } from './bug.controller.js'
 
 const router = express.Router()
 
-router.get('/api/bug', getBugs)
-router.get('/api/bug/:bugId', getBug)
-router.post('/api/bug', addBug)
-router.put('/api/bug', updateBug)
-router.delete('/api/bug/:bugId', removeBug)
+router.get('/', getBugs)
+router.get('/:bugId', getBug)
+router.post('/', addBug)
+router.put('/', updateBug)
+router.delete('/:bugId', removeBug)
 
 export const bugRoutes = router
