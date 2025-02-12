@@ -1,9 +1,9 @@
 import fs from 'fs'
 
 export function readJsonFile(path) {
-	const json = fs.readFileSync(path, 'utf8')
-	const data = JSON.parse(json)
-	return data
+    const json = fs.readFileSync(path, 'utf8')
+    const data = JSON.parse(json)
+    return data
 }
 
 export function writeJsonFile(path, data) {

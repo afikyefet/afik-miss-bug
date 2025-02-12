@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { BugPreview } from './BugPreview'
 
 export function BugList({ bugs, onRemoveBug, onEditBug }) {
+  console.log(bugs);
+
   return (
     <ul className="bug-list">
       {bugs.map((bug) => (
