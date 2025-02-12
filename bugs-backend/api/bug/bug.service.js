@@ -66,6 +66,7 @@ async function getById(bugId) {
     try {
         const bug = bugs.find(bug => bug._id === bugId);
         if (!bug) throw new Error(`Bad bug id: ${bugId}`);
+
         return bug;
     } catch (error) {
         loggerService.error(`Couldn't get bug with id ${bugId}: ${error}`);

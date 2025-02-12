@@ -100,3 +100,332 @@
 12.2.2025, 13:48:32 - INFO - Server ready at port 3333
 12.2.2025, 13:49:02 - INFO - Server ready at port 3333
 12.2.2025, 13:49:48 - INFO - Server ready at port 3333
+12.2.2025, 15:20:26 - INFO - Server ready at port 3333
+12.2.2025, 15:20:27 - INFO - Server ready at port 3333
+12.2.2025, 15:20:59 - INFO - Server ready at port 3333
+12.2.2025, 15:40:08 - INFO - Server ready at port 3333
+12.2.2025, 15:40:16 - INFO - Server ready at port 3333
+12.2.2025, 15:40:25 - INFO - Server ready at port 3333
+12.2.2025, 15:40:32 - INFO - Server ready at port 3333
+12.2.2025, 15:40:41 - INFO - Server ready at port 3333
+12.2.2025, 15:40:48 - INFO - Server ready at port 3333
+12.2.2025, 15:43:42 - INFO - Server ready at port 3333
+12.2.2025, 15:44:15 - INFO - Server ready at port 3333
+12.2.2025, 15:45:52 - INFO - Server ready at port 3333
+12.2.2025, 15:45:56 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:45:59 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:46:09 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:46:15 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:47:12 - INFO - Server ready at port 3333
+12.2.2025, 15:48:25 - INFO - Server ready at port 3333
+12.2.2025, 15:48:32 - INFO - Server ready at port 3333
+12.2.2025, 15:48:38 - INFO - Server ready at port 3333
+12.2.2025, 15:48:43 - INFO - Server ready at port 3333
+12.2.2025, 15:48:49 - INFO - Server ready at port 3333
+12.2.2025, 15:48:53 - INFO - Server ready at port 3333
+12.2.2025, 15:48:58 - INFO - Server ready at port 3333
+12.2.2025, 15:49:03 - INFO - Server ready at port 3333
+12.2.2025, 15:49:05 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:49:08 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:49:16 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:49:17 - INFO - Server ready at port 3333
+12.2.2025, 15:49:20 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:49:20 - INFO - Server ready at port 3333
+12.2.2025, 15:49:25 - INFO - Server ready at port 3333
+12.2.2025, 15:49:26 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:49:31 - INFO - Server ready at port 3333
+12.2.2025, 15:49:40 - INFO - Server ready at port 3333
+12.2.2025, 15:49:41 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:49:53 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:43:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:49:59 - INFO - Server ready at port 3333
+12.2.2025, 15:50:05 - INFO - Server ready at port 3333
+12.2.2025, 15:50:08 - INFO - Server ready at port 3333
+12.2.2025, 15:51:32 - INFO - Server ready at port 3333
+12.2.2025, 15:53:06 - INFO - Server ready at port 3333
+12.2.2025, 15:53:19 - INFO - Server ready at port 3333
+12.2.2025, 15:53:46 - INFO - Server ready at port 3333
+12.2.2025, 15:53:48 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:45:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:53:54 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:45:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:54:22 - INFO - Server ready at port 3333
+12.2.2025, 15:54:24 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:45:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:54:55 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:45:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:54:58 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:45:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:54:59 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:45:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:56:42 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:45:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:57:00 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:45:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 15:57:29 - INFO - Server ready at port 3333
+12.2.2025, 16:08:12 - INFO - Server ready at port 3333
+12.2.2025, 16:09:52 - INFO - Server ready at port 3333
+12.2.2025, 16:10:19 - INFO - Server ready at port 3333
+12.2.2025, 16:10:23 - INFO - Server ready at port 3333
+12.2.2025, 16:10:30 - INFO - Server ready at port 3333
+12.2.2025, 16:10:51 - INFO - Server ready at port 3333
+12.2.2025, 16:10:54 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:49:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 16:11:20 - ERROR - Cannot get bug | ReferenceError: id is not defined
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:49:41)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 16:12:44 - INFO - Server ready at port 3333
+12.2.2025, 16:14:05 - INFO - Server ready at port 3333
+12.2.2025, 16:14:40 - INFO - Server ready at port 3333
+12.2.2025, 16:15:06 - INFO - Server ready at port 3333
+12.2.2025, 16:15:50 - INFO - Server ready at port 3333
+12.2.2025, 16:16:07 - INFO - Server ready at port 3333
+12.2.2025, 16:17:20 - INFO - Server ready at port 3333
+12.2.2025, 16:20:39 - INFO - Server ready at port 3333
+12.2.2025, 16:21:03 - INFO - Server ready at port 3333
+12.2.2025, 16:26:43 - INFO - Server ready at port 3333
+12.2.2025, 16:28:54 - INFO - Server ready at port 3333
+12.2.2025, 16:30:46 - INFO - Server ready at port 3333
+12.2.2025, 16:31:06 - INFO - Server ready at port 3333
+12.2.2025, 16:36:12 - INFO - Server ready at port 3333
+12.2.2025, 16:39:57 - INFO - Server ready at port 3333
+12.2.2025, 16:40:54 - INFO - Server ready at port 3333
+12.2.2025, 16:42:03 - INFO - Server ready at port 3333
+12.2.2025, 16:43:09 - INFO - Server ready at port 3333
+12.2.2025, 16:54:10 - INFO - Server ready at port 3333
+12.2.2025, 16:56:39 - INFO - Server ready at port 3333
+12.2.2025, 16:57:59 - INFO - Server ready at port 3333
+12.2.2025, 16:59:38 - INFO - Server ready at port 3333
+12.2.2025, 16:59:43 - INFO - Server ready at port 3333
+12.2.2025, 17:00:28 - INFO - Server ready at port 3333
+12.2.2025, 17:00:30 - ERROR - Cannot get bug | TypeError: Assignment to constant variable.
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:29:23)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 17:00:34 - ERROR - Cannot get bug | TypeError: Assignment to constant variable.
+    at getBug (file:///C:/Users/noahs/Desktop/Afik/Miss-bug-afik/afik-miss-bug/bugs-backend/api/bug/bug.controller.js:29:23)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
+12.2.2025, 17:00:52 - INFO - Server ready at port 3333
+12.2.2025, 17:02:04 - INFO - Server ready at port 3333
+12.2.2025, 17:02:27 - INFO - Server ready at port 3333
+12.2.2025, 17:02:39 - INFO - Server ready at port 3333
+12.2.2025, 17:02:44 - INFO - Server ready at port 3333
+12.2.2025, 17:02:48 - INFO - Server ready at port 3333
+12.2.2025, 17:05:32 - INFO - Server ready at port 3333
+12.2.2025, 17:05:38 - INFO - Server ready at port 3333
+12.2.2025, 17:07:51 - INFO - Server ready at port 3333
+12.2.2025, 17:08:36 - INFO - Server ready at port 3333
+12.2.2025, 17:09:15 - INFO - Server ready at port 3333

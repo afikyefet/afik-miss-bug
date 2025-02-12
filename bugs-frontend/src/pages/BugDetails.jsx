@@ -30,6 +30,8 @@ export function BugDetails() {
     return <div className="bug-details main-layout">
         <h3>Bug Details 🐛</h3>
         <h4>{bug.title}</h4>
+        <p>{bug.description}</p>
+        <h4>{bug.labels}</h4>
         <p>Severity: <span>{bug.severity}</span></p>
         <Link to="/bug">Back to List</Link>
     </div>

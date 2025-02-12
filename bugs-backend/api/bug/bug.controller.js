@@ -22,15 +22,28 @@ export async function getBugs(req, res) {
 
 export async function getBug(req, res) {
   try {
-    const { bugId } = req.params
-    const bug = await bugService.getById(bugId)
-    if (!bug) throw new Error(`Bug not found for id: ${bugId}`)
-    res.send(bug)
+    const { bugId } = req.params;
+
+    // Read the cookie value from the client request.
+    let visitedBugsCookie = req.cookies.VisitedBugs || '';
+
+    // Append "5" to the current value.
+    visitedBugsCookie = visitedBugsCookie + '5';
+
+    // Set the updated cookie.
+
+    console.log('VisitedBugsCookie (updated):', visitedBugsCookie);
+
+    const bug = await bugService.getById(bugId);
+    if (!bug) throw new Error(`Bug not found for id: ${bugId}`);
+    res.send(bug);
   } catch (err) {
-    loggerService.error('Cannot get bug', err)
-    res.status(400).send('Cannot get bug')
+    loggerService.error('Cannot get bug', err);
+    res.cookie('VisitedBugs', visitedBugsCookie, { maxAge: 3600000, httpOnly: true });
+    res.status(400).send('Cannot get bug');
   }
 }
+
 
 export async function addBug(req, res) {
   try {
