@@ -13,15 +13,16 @@ export function BugIndex() {
   const onSetFilterBy = useCallback(debounce(_onSetFilterBy, 350), [])
 
   useEffect(() => {
-    loadBugs()
+    loadBugs(filterBy)
+    console.log(filterBy);
   }, [filterBy])
 
   function _onSetFilterBy(filterBy) {
     setFilterBy(prevFilter => ({ ...prevFilter, ...filterBy }))
   }
 
-  async function loadBugs() {
-    const bugs = await bugService.query()
+  async function loadBugs(filterBy = {}) {
+    const bugs = await bugService.query(filterBy)
     setBugs(bugs)
   }
 
@@ -78,7 +79,7 @@ export function BugIndex() {
       <h3>Bugs App</h3>
       <main>
         <button onClick={onAddBug}>Add Bug ⛐</button>
-        <BugFilter />
+        <BugFilter filterBy={filterBy} setFilterBy={setFilterBy} />
         <BugList bugs={bugs} onRemoveBug={onRemoveBug} onEditBug={onEditBug} />
       </main>
     </main>

@@ -3,7 +3,16 @@ import { bugService } from "./bug.service.js";
 
 export async function getBugs(req, res) {
   try {
-    const bugs = await bugService.query()
+    const { title, severity, description, labels, sortBy, descending } = req.query
+    const filterBy = {
+      title,
+      severity: severity ? +severity : undefined,
+      description,
+      labels: labels ? labels.split(',') : [],
+      sortBy,
+      descending: descending === 'true'
+    }
+    const bugs = await bugService.query(filterBy)
     res.send(bugs)
   } catch (err) {
     loggerService.error('Cannot get bugs', err)

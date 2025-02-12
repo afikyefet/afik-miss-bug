@@ -16,14 +16,51 @@ try {
     bugs = [];
 }
 
-async function query() {
+async function query(filterBy = {}) {
     try {
-        return bugs;
+        let filteredBugs = bugs
+        if (filterBy.title && filterBy.title.trim()) {
+            const titleLower = filterBy.title.toLowerCase()
+            filteredBugs = filteredBugs.filter(bug =>
+                bug.title && bug.title.toLowerCase().includes(titleLower)
+            )
+        }
+        if (filterBy.description && filterBy.description.trim()) {
+            const descLower = filterBy.description.toLowerCase()
+            filteredBugs = filteredBugs.filter(bug =>
+                bug.description && bug.description.toLowerCase().includes(descLower)
+            )
+        }
+        if (filterBy.severity !== undefined && filterBy.severity !== null && filterBy.severity !== "") {
+            const severityNum = +filterBy.severity
+            filteredBugs = filteredBugs.filter(bug =>
+                +bug.severity >= severityNum
+            )
+        }
+        if (filterBy.labels && filterBy.labels.length) {
+            filteredBugs = filteredBugs.filter(bug => {
+                if (!bug.labels || !Array.isArray(bug.labels)) return false
+                return filterBy.labels.every(label => bug.labels.includes(label))
+            })
+        }
+        if (filterBy.sortBy) {
+            filteredBugs.sort((a, b) => {
+                const aVal = a[filterBy.sortBy] !== undefined ? a[filterBy.sortBy] : 0
+                const bVal = b[filterBy.sortBy] !== undefined ? b[filterBy.sortBy] : 0
+                if (aVal < bVal) return filterBy.descending ? 1 : -1
+                if (aVal > bVal) return filterBy.descending ? -1 : 1
+                return 0
+            })
+        }
+        return filteredBugs
+        return bugs
     } catch (error) {
-        loggerService.error(`Couldn't get bugs: ${error}`);
-        throw error;
+        loggerService.error(`Couldn't get bugs: ${error}`)
+        throw error
     }
 }
+
+
 
 async function getById(bugId) {
     try {

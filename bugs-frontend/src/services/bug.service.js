@@ -3,10 +3,18 @@ import axios, { Axios } from 'axios'
 import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
 
-// const axios = Axios.create({
-//     withCredentials: true
-// })
 
+const labels = [
+    "Critical",
+    "High",
+    "Medium",
+    "Low",
+    "Cosmetic",
+    "UI/UX Issue",
+    "Performance Issue",
+    "Security Vulnerability",
+    "Functional Bug"
+]
 
 const STORAGE_KEY = 'bugDB'
 const BASE_URL = 'http://localhost:3333/api/bug/'
@@ -17,14 +25,13 @@ export const bugService = {
     save,
     remove,
     getDefaultFilter,
-    getEmptyBug
+    getEmptyBug,
+    getLabelsList
 }
 
 
-async function query() {
-    const { data: bugs } = await axios.get(BASE_URL)
-    console.log(bugs);
-
+async function query(filterBy = {}) {
+    const { data: bugs } = await axios.get(BASE_URL, { params: filterBy })
     return bugs
 }
 function getById(bugId) {
@@ -52,6 +59,14 @@ function getEmptyBug() {
         labels: [],
         severity: null,
     }
+}
+
+function getRandomLabel() {
+    return labels[Math.floor(Math.random() * labels.length)];
+}
+
+function getLabelsList() {
+    return labels
 }
 
 function getDefaultFilter() {
