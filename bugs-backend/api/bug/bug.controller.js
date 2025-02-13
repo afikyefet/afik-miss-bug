@@ -23,17 +23,6 @@ export async function getBugs(req, res) {
 export async function getBug(req, res) {
   try {
     const { bugId } = req.params;
-
-    // Read the cookie value from the client request.
-    let visitedBugsCookie = req.cookies.VisitedBugs || '';
-
-    // Append "5" to the current value.
-    visitedBugsCookie = visitedBugsCookie + '5';
-
-    // Set the updated cookie.
-
-    console.log('VisitedBugsCookie (updated):', visitedBugsCookie);
-
     const bug = await bugService.getById(bugId);
     if (!bug) throw new Error(`Bug not found for id: ${bugId}`);
     res.send(bug);
