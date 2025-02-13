@@ -23,13 +23,17 @@ export async function getBugs(req, res) {
 export async function getBug(req, res) {
   try {
     const { bugId } = req.params;
+
+    let visitedBugIds = req.cookies.visitedBugIds || [];
+    if (!visitedBugIds.includes(bugId)) visitedBugIds.push(bugId);
+    console.log(visitedBugIds);
+
+    if (visitedBugIds.length > 3) return res.status(403).send('Wait for a bit');
+    res.cookie('visitedBugIds', visitedBugIds, { maxAge: 1000 * 100 });
     const bug = await bugService.getById(bugId);
-    if (!bug) throw new Error(`Bug not found for id: ${bugId}`);
     res.send(bug);
   } catch (err) {
-    loggerService.error('Cannot get bug', err);
-    res.cookie('VisitedBugs', visitedBugsCookie, { maxAge: 3600000, httpOnly: true });
-    res.status(400).send('Cannot get bug');
+    res.status(400).send('Couldn\'t get bug', err);
   }
 }
 
