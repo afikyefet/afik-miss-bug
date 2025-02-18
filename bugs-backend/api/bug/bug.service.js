@@ -66,7 +66,6 @@ async function getById(bugId) {
     try {
         const bug = bugs.find(bug => bug._id === bugId);
         if (!bug) throw new Error(`Bad bug id: ${bugId}`);
-
         return bug;
     } catch (error) {
         loggerService.error(`Couldn't get bug with id ${bugId}: ${error}`);
@@ -94,7 +93,8 @@ async function save(bug, loggedinUser) {
             if (!loggedinUser.isAdmin && bug?.owner?._id !== loggedinUser._id) throw 'Cant save bug'
             const idx = bugs.findIndex(currBug => currBug._id === bug._id);
             if (idx === -1) throw new Error(`Bad bug id: ${bug._id}`);
-            bugs.splice(idx, 1, bug);
+            // bugs.splice(idx, 1, bug);
+            bugs[idx] = bug
         } else {
             bug._id = makeId();
             bug.createdAt = Date.now()
