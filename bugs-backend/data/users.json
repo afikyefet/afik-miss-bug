@@ -1,8 +1,10 @@
 [
     {
-        "username": "aaa",
-        "password": "$2b$10$XCwoW2ZjhJxAorVBDANb/O66IleFfJpSc8FcN/VTxiUbTeYqZjYku",
-        "fullname": "aaa",
-        "_id": "eroJOj"
+        "username": "rrr",
+        "password": "$2b$10$RcPVgBZtli4kmSZgY.BX2eEgdfJHwBORUVcWDrKMCF6cwG9brWOoe",
+        "fullname": "rrr",
+        "_id": "MbBdrU",
+        "score": 1000,
+        "isAdmin": false
     }
 ]

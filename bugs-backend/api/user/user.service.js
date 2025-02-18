@@ -68,6 +68,8 @@ async function save(user) {
             users.splice(idx, 1, user);
         } else {
             user._id = makeId();
+            user.score = 1000
+            user.isAdmin = false
             users.push(user);
         }
         await writeJsonFile('./data/users.json', users);

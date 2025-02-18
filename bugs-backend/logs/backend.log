@@ -638,3 +638,22 @@
     at next (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
     at Function.handle (C:\Users\noahs\Desktop\Afik\Miss-bug-afik\afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:175:3)
 18.2.2025, 17:17:17 - INFO - Server ready at port 3333
+18.2.2025, 17:41:24 - INFO - Server ready at port 3333
+18.2.2025, 17:41:33 - DEBUG - auth.service - signup with username: test, fullname: test
+18.2.2025, 17:41:33 - DEBUG - auth.route - new account created: {"username":"test","password":"$2b$10$QJeFHC0kFkzajLVyqUAOvujSLNjqMHCzdQFeN6yslBo/PHtM40fl6","fullname":"test","_id":"IDURJf"}
+18.2.2025, 17:41:33 - INFO - User signup: | {"_id":"IDURJf","fullname":"test"}
+18.2.2025, 17:41:34 - INFO - Server ready at port 3333
+18.2.2025, 17:42:28 - INFO - Server ready at port 3333
+18.2.2025, 17:44:02 - INFO - Server ready at port 3333
+18.2.2025, 17:44:20 - INFO - Server ready at port 3333
+18.2.2025, 17:44:27 - INFO - Server ready at port 3333
+18.2.2025, 17:44:31 - DEBUG - auth.service - signup with username: rrr, fullname: rrr
+18.2.2025, 17:44:31 - INFO - User signup: | {"_id":"MbBdrU","fullname":"rrr","score":1000,"isAdmin":false}
+18.2.2025, 17:44:31 - DEBUG - auth.route - new account created: {"username":"rrr","password":"$2b$10$RcPVgBZtli4kmSZgY.BX2eEgdfJHwBORUVcWDrKMCF6cwG9brWOoe","fullname":"rrr","_id":"MbBdrU","score":1000,"isAdmin":false}
+18.2.2025, 17:44:32 - INFO - Server ready at port 3333
+18.2.2025, 17:45:04 - DEBUG - auth.service - signup with username: ttt, fullname: ttt
+18.2.2025, 17:45:04 - INFO - User signup: | {"_id":"d7iAq9","fullname":"ttt","score":1000,"isAdmin":false}
+18.2.2025, 17:45:04 - DEBUG - auth.route - new account created: {"username":"ttt","password":"$2b$10$YsvEuA/ddqisk/.w176dueyeuAIXw7fO18cQrzN69yqqjuJm33nX6","fullname":"ttt","_id":"d7iAq9","score":1000,"isAdmin":false}
+18.2.2025, 17:45:05 - INFO - Server ready at port 3333
+18.2.2025, 17:45:14 - INFO - Server ready at port 3333
+18.2.2025, 17:45:17 - INFO - User login:  | {"_id":"MbBdrU","fullname":"rrr","score":1000,"isAdmin":false}
