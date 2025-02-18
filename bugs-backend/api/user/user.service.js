@@ -6,6 +6,7 @@ export const userService = {
     getById,
     save,
     remove,
+    getByUsername
 };
 
 let users;
@@ -25,7 +26,15 @@ async function query(filterBy = {}) {
     }
 }
 
-
+async function getByUsername(username) {
+    try {
+        const user = users.find(user => user.username === username)
+        return user
+    } catch (err) {
+        loggerService.error('userService[getByUsername] : ', err)
+        throw err
+    }
+}
 
 async function getById(userId) {
     try {

@@ -68,7 +68,6 @@ export function UserIndex() {
     <main className="main-layout">
       <h3>Users App</h3>
       <main>
-        <button onClick={onAddUser}>Add User ⛐</button>
         <UserList users={users} onRemoveUser={onRemoveUser} onEditUser={onEditUser} />
       </main>
     </main>

@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom'
 import { UserPreview } from './UserPreview'
 
-export function UserList({ users, onRemoveUser, onEditUser }) {
+export function UserList({ users = [], onRemoveUser, onEditUser }) {
 
   return (
     <ul className="user-list">

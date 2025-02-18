@@ -57,7 +57,7 @@ function getEmptyBug() {
         title: '',
         description: '',
         labels: [],
-        severity: null,
+        severity: 0,
     }
 }
 

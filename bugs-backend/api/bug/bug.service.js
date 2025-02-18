@@ -74,8 +74,10 @@ async function getById(bugId) {
     }
 }
 
-async function remove(bugId) {
+async function remove(bugId, loggedinUser) {
     try {
+        const bugToRemove = await getById(bugId)
+        if (!loggedinUser.isAdmin && bugToRemove?.owner?._id !== loggedinUser._id) throw 'Cant remove bug'
         const idx = bugs.findIndex(bug => bug._id === bugId);
         if (idx === -1) throw new Error(`Bad bug id: ${bugId}`);
         bugs.splice(idx, 1);
@@ -86,14 +88,20 @@ async function remove(bugId) {
     }
 }
 
-async function save(bug) {
+async function save(bug, loggedinUser) {
     try {
         if (bug._id) {
+            if (!loggedinUser.isAdmin && bug?.owner?._id !== loggedinUser._id) throw 'Cant save bug'
             const idx = bugs.findIndex(currBug => currBug._id === bug._id);
             if (idx === -1) throw new Error(`Bad bug id: ${bug._id}`);
             bugs.splice(idx, 1, bug);
         } else {
             bug._id = makeId();
+            bug.createdAt = Date.now()
+            bug.creator = {
+                _id: loggedinUser._id,
+                fullname: loggedinUser.fullname
+            }
             bugs.push(bug);
         }
         await writeJsonFile('./data/bugs.json', bugs);

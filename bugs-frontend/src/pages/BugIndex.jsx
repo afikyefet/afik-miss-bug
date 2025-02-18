@@ -5,6 +5,7 @@ import { useCallback, useState } from 'react'
 import { useEffect } from 'react'
 import { debounce } from '../services/util.service.js'
 import { BugFilter } from '../cmps/BugFilter.jsx'
+import { Link } from 'react-router-dom'
 
 
 export function BugIndex() {
@@ -77,7 +78,7 @@ export function BugIndex() {
     <main className="main-layout">
       <h3>Bugs App</h3>
       <main>
-        <button onClick={onAddBug}>Add Bug ⛐</button>
+        <Link to='/bug/edit'>Add Bug ⛐</Link>
         <BugFilter filterBy={filterBy} setFilterBy={setFilterBy} />
         <BugList bugs={bugs} onRemoveBug={onRemoveBug} onEditBug={onEditBug} />
       </main>

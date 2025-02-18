@@ -1,14 +1,13 @@
 .app-header {
     background-color: var(--clr1);
     color: var(--clr2bg-light);
-
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 100px;
 }
 
 .header-container h1 {

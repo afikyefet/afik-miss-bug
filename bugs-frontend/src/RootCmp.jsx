@@ -8,6 +8,7 @@ import { AboutUs } from './pages/AboutUs.jsx'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import { UserIndex } from './pages/UserIndex.jsx'
 import { UserDetails } from './pages/UserDetails.jsx'
+import { BugEdit } from './pages/BugEdit.jsx'
 
 export function App() {
   return (
@@ -21,6 +22,8 @@ export function App() {
             <Route path='/user/:userId' element={<UserDetails />} />
             <Route path='/bug' element={<BugIndex />} />
             <Route path='/bug/:bugId' element={<BugDetails />} />
+            <Route path="/bug/edit/:bugId" element={<BugEdit />} />
+            <Route path="/bug/edit" element={<BugEdit />} />
             <Route path='/about' element={<AboutUs />} />
           </Routes>
         </main>

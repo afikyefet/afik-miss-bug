@@ -36,9 +36,11 @@ export async function getBug(req, res) {
 
 export async function addBug(req, res) {
   try {
+    const loggedinUser = req.loggedinUser
+
     const { title, description, severity, labels = [] } = req.body
     const bugToSave = { title, description, labels, severity: +severity }
-    const savedBug = await bugService.save(bugToSave)
+    const savedBug = await bugService.save(bugToSave, loggedinUser)
     res.send(savedBug)
   } catch (err) {
     loggerService.error('Cannot add bug', err)
@@ -48,9 +50,11 @@ export async function addBug(req, res) {
 
 export async function updateBug(req, res) {
   try {
+    const loggedinUser = req.loggedinUser
+
     const { _id, title, description, severity, labels = [] } = req.body
     const bugToSave = { _id, title, labels, description, severity: +severity }
-    const savedBug = await bugService.save(bugToSave)
+    const savedBug = await bugService.save(bugToSave, loggedinUser)
     res.send(savedBug)
   } catch (err) {
     loggerService.error('Cannot update bug', err)
@@ -60,8 +64,10 @@ export async function updateBug(req, res) {
 
 export async function removeBug(req, res) {
   try {
+    const loggedinUser = req.loggedinUser
+
     const { bugId } = req.params
-    await bugService.remove(bugId)
+    await bugService.remove(bugId, loggedinUser)
     res.send('Bug removed')
   } catch (err) {
     loggerService.error('Cannot remove bug', err)
