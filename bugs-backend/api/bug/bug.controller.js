@@ -29,7 +29,9 @@ export async function getBug(req, res) {
     console.log(visitedBugIds);
 
     if (visitedBugIds.length > 3) return res.status(403).send('Wait for a bit');
-    res.cookie('visitedBugIds', visitedBugIds, { maxAge: 1000 * 100 });
+    res.cookie('visitedBugIds', visitedBugIds, { maxAge: 1000 * 1000 });
+    console.log(visitedBugIds);
+
     const bug = await bugService.getById(bugId);
     res.send(bug);
   } catch (err) {
@@ -41,7 +43,6 @@ export async function getBug(req, res) {
 export async function addBug(req, res) {
   try {
     const loggedinUser = req.loggedinUser
-
     const { title, description, severity, labels = [] } = req.body
     const bugToSave = { title, description, labels, severity: +severity }
     const savedBug = await bugService.save(bugToSave, loggedinUser)

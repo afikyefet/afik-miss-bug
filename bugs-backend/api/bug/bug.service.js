@@ -11,6 +11,9 @@ export const bugService = {
 let bugs;
 try {
     bugs = readJsonFile('./data/bugs.json');
+    console.log('bugs:', bugs);
+
+    if (!bugs) bugs = [];
 } catch (error) {
     loggerService.error(`Failed to read bugs.json: ${error}`);
     bugs = [];
@@ -104,7 +107,7 @@ async function save(bug, loggedinUser) {
             }
             bugs.push(bug);
         }
-        await writeJsonFile('./data/bugs.json', bugs);
+        await writeJsonFile('/data/bugs.json', bugs);
         return bug;
     } catch (error) {
         loggerService.error(`Error in bugService.save: ${error}`);

@@ -2,9 +2,10 @@ import Cryptr from 'cryptr'
 import bcrypt from 'bcrypt'
 import { userService } from '../user/user.service.js'
 import { loggerService } from '../../services/logger.service.js'
+import { log } from '../../middlewares/log.middleware.js'
 
 
-const cryptr = new Cryptr(process.env.SECRET1 || 'Secret-Puk-1234')
+const cryptr = new Cryptr(process.env.SECRET1 || 'Secret-bug-1234')
 
 export const authService = {
     getLoginToken,
@@ -33,15 +34,11 @@ function validateToken(token) {
 async function login(username, password) {
     var user = await userService.getByUsername(username)
     if (!user) throw 'Unknown UserName'
-
     // const match = await bcrypt.compare(password, user.password)
     // if (!match) throw 'Invalid username or password'
-
     const miniUser = {
         _id: user._id,
         fullname: user.fullname,
-        imgUrl: user.imgUrl,
-        score: user.score,
         isAdmin: user.isAdmin,
     }
     return miniUser

@@ -1,9 +1,25 @@
 [
     {
-        "username": "rrr",
-        "password": "$2b$10$RcPVgBZtli4kmSZgY.BX2eEgdfJHwBORUVcWDrKMCF6cwG9brWOoe",
-        "fullname": "rrr",
-        "_id": "MbBdrU",
+        "username": "test",
+        "password": "$2b$10$teKya0Q4AQwLWtJ.ZIAsjuuejXGE.cIdh9aAyXDUrpd8CQHGVg0Xe",
+        "fullname": "test",
+        "_id": "ckycSR",
+        "score": 1000,
+        "isAdmin": false
+    },
+    {
+        "username": "aaaa",
+        "password": "$2b$10$an1UomW0CNzPvWZas7Sq/e4Q0FUeivw6YIvZxyBePJ8hZe50IMcUa",
+        "fullname": "aaaa",
+        "_id": "Wj2G4p",
+        "score": 1000,
+        "isAdmin": false
+    },
+    {
+        "username": "ttt",
+        "password": "$2b$10$d3K9VVMrLqxQ9lU77ARCMepSPPwYt8VAhDe.yN387Q7tbveNzY5ea",
+        "fullname": "ttt",
+        "_id": "ElBzEX",
         "score": 1000,
         "isAdmin": false
     }

@@ -21,8 +21,8 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions))
-app.use(express.json())
 app.use(express.static('public'))
+app.use(express.json())
 app.use(cookieParser())
 
 app.use('/api/bug', bugRoutes)
@@ -35,7 +35,8 @@ app.get('/**', (req, res) => {
 })
 
 const port = 3333
-app.listen(port, () => {
+const host = "127.0.0.1";
+app.listen(port, host, () => {
     loggerService.info(`Server ready at port ${port}`)
 })
 

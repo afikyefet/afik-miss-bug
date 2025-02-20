@@ -79,3 +79,16 @@ async function save(user) {
         throw error;
     }
 }
+
+function _saveUsersToFile() {
+    return new Promise((resolve, reject) => {
+
+        const usersStr = JSON.stringify(users, null, 2)
+        fs.writeFile('data/user.json', usersStr, (err) => {
+            if (err) {
+                return console.log(err);
+            }
+            resolve()
+        })
+    })
+}

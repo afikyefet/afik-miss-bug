@@ -5,9 +5,11 @@ const STORAGE_KEY = 'userDB'
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
 
 
-const BASE_URL = (process.env.NODE_ENV !== 'development') ?
-    '/api/' :
-    '//localhost:3333/api/'
+// const BASE_URL = (process.env.NODE_ENV !== 'development') ?
+//     '/api/' :
+//     '//localhost:3333/api/'
+
+const BASE_URL = 'http://127.0.0.1:3333/api/'
 
 const BASE_USER_URL = BASE_URL + 'user/'
 const BASE_AUTH_URL = BASE_URL + 'auth/'
@@ -53,7 +55,6 @@ async function save(user) {
         response = await axios.put(BASE_USER_URL, user);
     } else {
         user.score = 1000
-        if (!user.imgUrl) user.imgUrl = "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
         user.isAdmin = false
         response = await axios.post(BASE_USER_URL, user);
     }
@@ -62,10 +63,13 @@ async function save(user) {
 
 async function login(credentials) {
     try {
+
         const { data: user } = await axios.post(BASE_AUTH_URL + 'login', credentials)
+        console.log(user);
         if (user) {
             return saveLocalUser(user)
         }
+
     } catch (err) {
         console.error('Failed to login', err)
         throw err

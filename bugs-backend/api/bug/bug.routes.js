@@ -7,8 +7,8 @@ const router = express.Router()
 
 router.get('/', getBugs)
 router.get('/:bugId', log, getBug)
+router.delete('/:bugId', requireAuth, removeBug)
 router.post('/', requireAuth, addBug)
 router.put('/', requireAuth, updateBug)
-router.delete('/:bugId', requireAuth, removeBug)
 
 export const bugRoutes = router
