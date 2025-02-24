@@ -1,8 +1,8 @@
-import Cryptr from 'cryptr'
-import bcrypt from 'bcrypt'
 import { userService } from '../user/user.service.js'
 import { loggerService } from '../../services/logger.service.js'
 import { log } from '../../middlewares/log.middleware.js'
+import Cryptr from 'cryptr'
+import bcrypt from 'bcrypt'
 
 
 const cryptr = new Cryptr(process.env.SECRET1 || 'Secret-bug-1234')
