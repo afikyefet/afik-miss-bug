@@ -3,6 +3,10 @@ import axios, { Axios } from 'axios'
 import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
 
+const myAxios = axios.create({
+    withCredentials: true, // Send cookies with requests (if needed)
+})
+
 
 const labels = [
     "Critical",
@@ -31,23 +35,25 @@ export const bugService = {
 
 
 async function query(filterBy = {}) {
-    const { data: bugs } = await axios.get(BASE_URL, { params: filterBy })
+    const { data: bugs } = await myAxios.get(BASE_URL, { params: filterBy })
     return bugs
 }
 function getById(bugId) {
-    return axios.get(BASE_URL + bugId)
+    return myAxios.get(BASE_URL + bugId)
         .then(res => res.data)
 }
 function remove(bugId) {
-    return axios.delete(BASE_URL + bugId)
+    return myAxios.delete(BASE_URL + bugId)
         .then(res => res.data)
 }
 async function save(bug) {
+    console.log(bug);
+
     let response;
     if (bug._id) {
-        response = await axios.put(BASE_URL, bug);
+        response = await myAxios.put(BASE_URL, bug);
     } else {
-        response = await axios.post(BASE_URL, bug);
+        response = await myAxios.post(BASE_URL, bug);
     }
     return response.data;
 }

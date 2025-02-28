@@ -9,18 +9,21 @@ import { authRoutes } from './api/auth/auth.routes.js';
 
 const app = express()
 
-
-const corsOptions = {
-    origin: [
-        'http://localhost:5173',
-        'http://localhost:5174',
-        'http://127.0.0.1:5173',
-    ],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.resolve('public')))
+} else {
+    const corsOptions = {
+        origin: [
+            'http://localhost:5173',
+            'http://localhost:5174',
+            'http://127.0.0.1:5173',
+        ],
+        credentials: true,
+        methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    }
+    app.use(cors(corsOptions))
 }
 
-app.use(cors(corsOptions))
 app.use(express.static('public'))
 app.use(express.json())
 app.use(cookieParser())
@@ -35,8 +38,8 @@ app.get('/**', (req, res) => {
 })
 
 const port = 3333
-const host = "127.0.0.1";
-app.listen(port, host, () => {
+// const host = "127.0.0.1";
+app.listen(port, () => {
     loggerService.info(`Server ready at port ${port}`)
 })
 

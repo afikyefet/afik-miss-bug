@@ -8,16 +8,7 @@ export const bugService = {
     remove,
 };
 
-let bugs;
-try {
-    bugs = readJsonFile('./data/bugs.json');
-    console.log('bugs:', bugs);
-
-    if (!bugs) bugs = [];
-} catch (error) {
-    loggerService.error(`Failed to read bugs.json: ${error}`);
-    bugs = [];
-}
+const bugs = readJsonFile('./data/bugs.json')
 
 async function query(filterBy = {}) {
     try {
@@ -99,7 +90,9 @@ async function save(bug, loggedinUser) {
             // bugs.splice(idx, 1, bug);
             bugs[idx] = bug
         } else {
-            bug._id = makeId();
+            do {
+                bug._id = makeId()
+            } while (bugs.some((bugSome) => bugSome._id === bug._id))
             bug.createdAt = Date.now()
             bug.creator = {
                 _id: loggedinUser._id,
@@ -107,7 +100,7 @@ async function save(bug, loggedinUser) {
             }
             bugs.push(bug);
         }
-        await writeJsonFile('/data/bugs.json', bugs);
+        await writeJsonFile('./data/bugs.json', bugs);
         return bug;
     } catch (error) {
         loggerService.error(`Error in bugService.save: ${error}`);

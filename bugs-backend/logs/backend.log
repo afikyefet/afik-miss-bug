@@ -821,3 +821,156 @@
 20.2.2025, 22:19:14 - INFO - User login:  | {"_id":"Wj2G4p","fullname":"aaaa","isAdmin":false}
 20.2.2025, 22:19:27 - INFO - Server ready at port 3333
 20.2.2025, 22:19:31 - INFO - User login:  | {"_id":"ckycSR","fullname":"test","isAdmin":false}
+23.2.2025, 21:28:17 - INFO - Server ready at port 3333
+23.2.2025, 21:28:48 - INFO - User login:  | {"_id":"Wj2G4p","fullname":"aaaa","isAdmin":false}
+25.2.2025, 20:04:25 - INFO - Server ready at port 3333
+25.2.2025, 20:04:45 - INFO - User login:  | {"_id":"Wj2G4p","fullname":"aaaa","isAdmin":false}
+25.2.2025, 20:13:35 - INFO - Server ready at port 3333
+25.2.2025, 20:14:53 - INFO - Server ready at port 3333
+25.2.2025, 20:16:29 - INFO - Server ready at port 3333
+28.2.2025, 10:48:42 - INFO - Server ready at port 3333
+28.2.2025, 10:49:27 - ERROR - Failed to Login Invalid username or password
+28.2.2025, 10:49:53 - ERROR - Failed to Login Invalid username or password
+28.2.2025, 10:49:56 - ERROR - Failed to Login Invalid username or password
+28.2.2025, 10:49:58 - ERROR - Failed to Login Invalid username or password
+28.2.2025, 10:50:03 - DEBUG - auth.service - signup with username: aaa, fullname: aaa
+28.2.2025, 10:50:03 - DEBUG - auth.route - new account created: {"username":"aaa","password":"$2b$10$YXk60Hkp2c9SXx9f4HsNDOPqmova6bhVYUpixGIF.5/yyuoUSavSO","fullname":"aaa","score":1000,"isAdmin":false,"_id":"ofTz02"}
+28.2.2025, 10:50:04 - INFO - User signup: | {"_id":"ofTz02","fullname":"aaa","isAdmin":false,"score":1000}
+28.2.2025, 10:50:04 - INFO - Server ready at port 3333
+28.2.2025, 10:50:09 - ERROR - Failed to Login Invalid username or password
+28.2.2025, 10:57:54 - INFO - Server ready at port 3333
+28.2.2025, 11:01:04 - INFO - Server ready at port 3333
+28.2.2025, 11:01:19 - INFO - Server ready at port 3333
+28.2.2025, 11:01:25 - INFO - Server ready at port 3333
+28.2.2025, 11:01:48 - ERROR - Failed to Login Invalid username or password
+28.2.2025, 11:02:10 - ERROR - Failed to Login Invalid username or password
+28.2.2025, 11:04:48 - INFO - User login:  | {"_id":"ofTz02","fullname":"aaa","isAdmin":false,"score":1000}
+28.2.2025, 11:04:56 - DEBUG - auth.service - signup with username: hhh, fullname: hhh
+28.2.2025, 11:04:56 - ERROR - Failed to signup ReferenceError: fs is not defined
+28.2.2025, 11:04:59 - INFO - User login:  | {"_id":"ixjmAb","fullname":"hhh","isAdmin":false,"score":1000}
+28.2.2025, 11:20:52 - DEBUG - auth.service - signup with username: bbb, fullname: bbb
+28.2.2025, 11:20:53 - ERROR - Failed to signup ReferenceError: fs is not defined
+28.2.2025, 11:21:13 - INFO - User login:  | {"_id":"RdlCcO","fullname":"bbb","isAdmin":false,"score":1000}
+28.2.2025, 11:21:21 - INFO - User login:  | {"_id":"RdlCcO","fullname":"bbb","isAdmin":false,"score":1000}
+28.2.2025, 11:22:56 - INFO - User login:  | {"_id":"RdlCcO","fullname":"bbb","isAdmin":false,"score":1000}
+28.2.2025, 11:23:09 - INFO - User login:  | {"_id":"ofTz02","fullname":"aaa","isAdmin":false,"score":1000}
+28.2.2025, 11:26:33 - INFO - Server ready at port 3333
+28.2.2025, 11:26:38 - INFO - User login:  | {"_id":"ofTz02","fullname":"aaa","isAdmin":false,"score":1000}
+28.2.2025, 11:28:39 - INFO - Server ready at port 3333
+28.2.2025, 11:29:17 - INFO - Server ready at port 3333
+28.2.2025, 11:29:27 - INFO - User login:  | {"_id":"ofTz02","fullname":"aaa","score":1000,"isAdmin":false}
+28.2.2025, 11:29:40 - INFO - User login:  | {"_id":"ofTz02","fullname":"aaa","score":1000,"isAdmin":false}
+28.2.2025, 11:29:47 - ERROR - Failed to signup ReferenceError: fs is not defined
+28.2.2025, 11:34:50 - ERROR - Failed to signup ReferenceError: fs is not defined
+28.2.2025, 11:34:54 - INFO - User login:  | {"_id":"neyYzq","fullname":"rrr","score":1000,"isAdmin":false}
+28.2.2025, 11:35:13 - INFO - Server ready at port 3333
+28.2.2025, 11:35:26 - ERROR - Failed to signup ReferenceError: fs is not defined
+28.2.2025, 11:36:02 - INFO - Server ready at port 3333
+28.2.2025, 11:36:09 - DEBUG - auth.route - new account created: {"username":"ttt","password":"$2b$10$vqtiLqZBQkhSzG9ZcGET8uSEnFhsX/rpQdchIxQKqcsN8xRHmxAHq","fullname":"ttt","score":1000,"isAdmin":false,"_id":"ySPMfJ"}
+28.2.2025, 11:36:09 - INFO - User signup: | {"_id":"ySPMfJ","fullname":"ttt","score":1000,"isAdmin":false}
+28.2.2025, 11:36:09 - INFO - Server ready at port 3333
+28.2.2025, 11:36:33 - ERROR - Failed to Login Unknown username
+28.2.2025, 11:36:35 - ERROR - Failed to Login Unknown username
+28.2.2025, 11:36:42 - ERROR - Failed to Login Unknown username
+28.2.2025, 11:37:17 - INFO - Server ready at port 3333
+28.2.2025, 11:37:52 - INFO - Server ready at port 3333
+28.2.2025, 11:37:58 - DEBUG - auth.route - new account created: {"username":"ttt","password":"$2b$10$3YC9S.MjCZRVjQCaNHx9aey0Hcsh0d1XaaefSKtWjqAnXw5iz7QxS","fullname":"ttt","score":1000,"isAdmin":false,"_id":"AbQ8zJ"}
+28.2.2025, 11:37:58 - INFO - Server ready at port 3333
+28.2.2025, 11:38:15 - INFO - User login:  | {"_id":"AbQ8zJ","fullname":"ttt","score":1000,"isAdmin":false}
+28.2.2025, 11:38:21 - INFO - User login:  | {"_id":"AbQ8zJ","fullname":"ttt","score":1000,"isAdmin":false}
+28.2.2025, 11:38:27 - DEBUG - auth.route - new account created: {"username":"aaa","password":"$2b$10$h3gXqLRaJ.886drHluKke.LoPwMtERo.ho6XHKxVuP8TVqU8FdMP2","fullname":"aaa","score":1000,"isAdmin":false,"_id":"h0qSKO"}
+28.2.2025, 11:38:27 - INFO - Server ready at port 3333
+28.2.2025, 11:38:27 - ERROR - Failed to signup Username already taken
+28.2.2025, 11:38:37 - INFO - Server ready at port 3333
+28.2.2025, 15:06:13 - INFO - Server ready at port 3333
+28.2.2025, 15:15:37 - INFO - Server ready at port 3333
+28.2.2025, 15:15:53 - DEBUG - auth.route - new account created: {"username":"aa","password":"$2b$10$DWHghNAZ61N6vFgkWAyVt.KIHPwHtL3UGGMEeZOT3BOtsgN/heWyu","fullname":"aa","score":1000,"isAdmin":false,"_id":"8UsZkq"}
+28.2.2025, 15:15:54 - INFO - Server ready at port 3333
+28.2.2025, 15:16:00 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
+28.2.2025, 15:55:21 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
+28.2.2025, 15:56:30 - INFO - Server ready at port 3333
+28.2.2025, 15:56:42 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
+28.2.2025, 15:56:51 - INFO - Server ready at port 3333
+28.2.2025, 15:57:05 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
+28.2.2025, 15:57:13 - INFO - User login:  | {"_id":"h0qSKO","fullname":"aaa","score":1000,"isAdmin":false}
+28.2.2025, 15:57:22 - ERROR - Failed to Login Unknown username
+28.2.2025, 15:57:26 - INFO - User login:  | {"_id":"AbQ8zJ","fullname":"ttt","score":1000,"isAdmin":false}
+28.2.2025, 16:00:47 - INFO - Server ready at port 3333
+28.2.2025, 16:01:42 - INFO - Server ready at port 3333
+28.2.2025, 16:04:18 - INFO - Server ready at port 3333
+28.2.2025, 16:04:42 - INFO - Server ready at port 3333
+28.2.2025, 16:05:51 - INFO - Server ready at port 3333
+28.2.2025, 16:07:04 - INFO - Server ready at port 3333
+28.2.2025, 16:08:03 - INFO - Server ready at port 3333
+28.2.2025, 16:08:59 - INFO - Server ready at port 3333
+28.2.2025, 16:09:48 - INFO - Server ready at port 3333
+28.2.2025, 16:10:02 - INFO - Server ready at port 3333
+28.2.2025, 16:10:32 - INFO - Server ready at port 3333
+28.2.2025, 16:11:45 - INFO - Server ready at port 3333
+28.2.2025, 16:12:28 - INFO - Server ready at port 3333
+28.2.2025, 16:13:30 - INFO - Server ready at port 3333
+28.2.2025, 16:13:33 - INFO - Server ready at port 3333
+28.2.2025, 16:14:05 - INFO - Server ready at port 3333
+28.2.2025, 16:15:04 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
+28.2.2025, 16:15:11 - ERROR - Error in bugService.save: ReferenceError: bugToSave is not defined
+28.2.2025, 16:15:11 - ERROR - Cannot add bug | ReferenceError: bugToSave is not defined
+    at Object.save (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.service.js:94:17)
+    at addBug (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.controller.js:49:39)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at requireAuth (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/middlewares/require-auth.middleware.js:12:5)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+28.2.2025, 16:16:17 - ERROR - Error in bugService.save: ReferenceError: bugToSave is not defined
+28.2.2025, 16:16:17 - ERROR - Cannot add bug | ReferenceError: bugToSave is not defined
+    at Object.save (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.service.js:94:17)
+    at addBug (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.controller.js:49:39)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at requireAuth (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/middlewares/require-auth.middleware.js:12:5)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+28.2.2025, 16:16:55 - INFO - Server ready at port 3333
+28.2.2025, 16:16:58 - ERROR - Error in bugService.save: ReferenceError: bugToSave is not defined
+28.2.2025, 16:16:58 - ERROR - Cannot add bug | ReferenceError: bugToSave is not defined
+    at Object.save (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.service.js:94:17)
+    at addBug (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.controller.js:51:39)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at requireAuth (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/middlewares/require-auth.middleware.js:12:5)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+28.2.2025, 16:17:30 - INFO - Server ready at port 3333
+28.2.2025, 16:17:35 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
+28.2.2025, 16:17:53 - INFO - Server ready at port 3333
+28.2.2025, 16:18:00 - ERROR - Error in bugService.save: ReferenceError: bugToSave is not defined
+28.2.2025, 16:18:00 - ERROR - Cannot add bug | ReferenceError: bugToSave is not defined
+    at Object.save (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.service.js:94:17)
+    at addBug (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.controller.js:51:39)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at requireAuth (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/middlewares/require-auth.middleware.js:12:5)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+28.2.2025, 16:19:31 - INFO - Server ready at port 3333
+28.2.2025, 16:19:33 - ERROR - Error in bugService.save: Error: ENOENT: no such file or directory, open 'D:\data\bugs.json'
+28.2.2025, 16:19:33 - ERROR - Cannot add bug | Error: ENOENT: no such file or directory, open 'D:\data\bugs.json'
+28.2.2025, 16:19:41 - ERROR - Error in bugService.save: Error: ENOENT: no such file or directory, open 'D:\data\bugs.json'
+28.2.2025, 16:19:41 - ERROR - Cannot add bug | Error: ENOENT: no such file or directory, open 'D:\data\bugs.json'
+28.2.2025, 16:20:04 - ERROR - Error in bugService.save: Error: ENOENT: no such file or directory, open 'D:\data\bugs.json'
+28.2.2025, 16:20:04 - ERROR - Cannot add bug | Error: ENOENT: no such file or directory, open 'D:\data\bugs.json'
+28.2.2025, 16:20:04 - INFO - Server ready at port 3333
+28.2.2025, 16:20:10 - INFO - Server ready at port 3333
+28.2.2025, 16:20:18 - INFO - Server ready at port 3333

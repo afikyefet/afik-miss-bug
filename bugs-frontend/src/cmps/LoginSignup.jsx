@@ -53,15 +53,22 @@ export function LoginSignup({ onSignup, onLogin }) {
                 <button className="btn-link" onClick={onToggleSignup}>{!isSignup ? 'Signup' : 'Login'}</button>
             </p>
             {!isSignup && <form className="login-form" onSubmit={onSubmitForm}>
-                <select
+                {/* <select
                     name="username"
                     value={credentials.username}
                     onChange={handleChange}
                 >
                     <option value="">Select User</option>
                     {users.map(user => <option key={user._id} value={user.username}>{user.fullname}</option>)}
-                </select>
-
+                </select> */}
+                <input
+                    type="password"
+                    name="password"
+                    value={credentials.password}
+                    placeholder="Password"
+                    onChange={handleChange}
+                    required />
+                <input name='username' type='text' value={credentials.username} onChange={handleChange} placeholder='Username' required />
                 <button>Login!</button>
             </form>}
             <div className="signup-section">

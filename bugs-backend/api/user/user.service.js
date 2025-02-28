@@ -1,5 +1,6 @@
 import { loggerService } from "../../services/logger.service.js";
 import { makeId, readJsonFile, writeJsonFile } from "../../services/utils.js";
+import fs from 'fs';
 
 export const userService = {
     query,
@@ -62,9 +63,10 @@ async function remove(userId) {
 
 async function save(user) {
     try {
-        if (user._id) {
-            const idx = users.findIndex(currUser => currUser._id === user._id);
-            if (idx === -1) throw new Error(`Bad user id: ${user._id}`);
+        let savedUser = user
+        if (savedUser._id) {
+            const idx = savedUser.findIndex(currUser => currUser._id === savedUser._id);
+            if (idx === -1) throw new Error(`Bad user id: ${savedUser._id}`);
             users.splice(idx, 1, user);
         } else {
             user._id = makeId();
@@ -72,8 +74,8 @@ async function save(user) {
             user.isAdmin = false
             users.push(user);
         }
-        await writeJsonFile('./data/users.json', users);
-        return user;
+        // await writeJsonFile('./data/users.json', users);
+        return _saveUsersToFile().then(() => user)
     } catch (error) {
         loggerService.error(`Error in userService.save: ${error}`);
         throw error;
@@ -84,7 +86,7 @@ function _saveUsersToFile() {
     return new Promise((resolve, reject) => {
 
         const usersStr = JSON.stringify(users, null, 2)
-        fs.writeFile('data/user.json', usersStr, (err) => {
+        fs.writeFile('data/users.json', usersStr, (err) => {
             if (err) {
                 return console.log(err);
             }

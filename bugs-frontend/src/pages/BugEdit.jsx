@@ -11,7 +11,7 @@ export function BugEdit() {
     const labels = bugService.getLabelsList()
     const selectedLabels = bugToEdit.labels || []
 
-    console.log(bugToEdit);
+    // console.log(bugToEdit);
 
 
     const navigate = useNavigate()

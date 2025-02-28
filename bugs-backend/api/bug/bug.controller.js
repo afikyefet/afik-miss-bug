@@ -43,8 +43,11 @@ export async function getBug(req, res) {
 export async function addBug(req, res) {
   try {
     const loggedinUser = req.loggedinUser
-    const { title, description, severity, labels = [] } = req.body
-    const bugToSave = { title, description, labels, severity: +severity }
+    // console.log(req);
+
+
+    // const { title, description, severity, labels = [] } = req.body
+    const bugToSave = { ...res.body, severity: +req.body.severity }
     const savedBug = await bugService.save(bugToSave, loggedinUser)
     res.send(savedBug)
   } catch (err) {

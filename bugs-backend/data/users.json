@@ -1,26 +1,26 @@
 [
-    {
-        "username": "test",
-        "password": "$2b$10$teKya0Q4AQwLWtJ.ZIAsjuuejXGE.cIdh9aAyXDUrpd8CQHGVg0Xe",
-        "fullname": "test",
-        "_id": "ckycSR",
-        "score": 1000,
-        "isAdmin": false
-    },
-    {
-        "username": "aaaa",
-        "password": "$2b$10$an1UomW0CNzPvWZas7Sq/e4Q0FUeivw6YIvZxyBePJ8hZe50IMcUa",
-        "fullname": "aaaa",
-        "_id": "Wj2G4p",
-        "score": 1000,
-        "isAdmin": false
-    },
-    {
-        "username": "ttt",
-        "password": "$2b$10$d3K9VVMrLqxQ9lU77ARCMepSPPwYt8VAhDe.yN387Q7tbveNzY5ea",
-        "fullname": "ttt",
-        "_id": "ElBzEX",
-        "score": 1000,
-        "isAdmin": false
-    }
+  {
+    "username": "ttt",
+    "password": "$2b$10$3YC9S.MjCZRVjQCaNHx9aey0Hcsh0d1XaaefSKtWjqAnXw5iz7QxS",
+    "fullname": "ttt",
+    "score": 1000,
+    "isAdmin": false,
+    "_id": "AbQ8zJ"
+  },
+  {
+    "username": "aaa",
+    "password": "$2b$10$h3gXqLRaJ.886drHluKke.LoPwMtERo.ho6XHKxVuP8TVqU8FdMP2",
+    "fullname": "aaa",
+    "score": 1000,
+    "isAdmin": false,
+    "_id": "h0qSKO"
+  },
+  {
+    "username": "aa",
+    "password": "$2b$10$DWHghNAZ61N6vFgkWAyVt.KIHPwHtL3UGGMEeZOT3BOtsgN/heWyu",
+    "fullname": "aa",
+    "score": 1000,
+    "isAdmin": false,
+    "_id": "8UsZkq"
+  }
 ]
