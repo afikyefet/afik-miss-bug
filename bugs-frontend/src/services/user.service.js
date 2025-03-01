@@ -44,28 +44,33 @@ async function getUsers() {
 async function query() {
     return await httpService.get(BASE_USER_URL)
 }
+
 function getById(userId) {
-    return httpService.get(BASE_USER_URL + userId)
+    return httpService.get(`${BASE_USER_URL}${userId}`)
 }
+
 function remove(userId) {
-    return httpService.delete(BASE_USER_URL + userId)
+    return httpService.delete(`${BASE_USER_URL}${userId}`)
 }
+
 async function save(user) {
     if (user._id) {
-        return await httpService.put(BASE_USER_URL, user);
+        return await httpService.put(BASE_USER_URL, user)
     } else {
-        return await httpService.post(BASE_USER_URL, user);
+        return await httpService.post(BASE_USER_URL, user)
     }
 }
 
 async function login(credentials) {
     try {
-        return await httpService.post(BASE_AUTH_URL + 'login', credentials)
-            .then((user) => {
-                if (user) {
-                    saveLocalUser(user)
-                }
-            })
+        const user = await httpService.post(`${BASE_AUTH_URL}login`, credentials)
+        if (user && user._id) {
+            saveLocalUser(user)
+            return user
+        } else {
+            console.error('Login failed: Invalid user data received.')
+            return null
+        }
     } catch (err) {
         console.error('Failed to login', err)
         throw err
@@ -74,22 +79,24 @@ async function login(credentials) {
 
 async function signup(credentials) {
     try {
-        return await httpService.post(BASE_AUTH_URL + 'signup', credentials)
-            .then((user) => {
-                if (user) {
-                    saveLocalUser(user)
-                }
-            })
+        const user = await httpService.post(`${BASE_AUTH_URL}signup`, credentials)
+        if (user && user._id) {
+            saveLocalUser(user)
+            return user
+        } else {
+            console.error('Signup failed: Invalid user data received.')
+            return null
+        }
     } catch (err) {
         console.error('Failed to signup', err)
         throw err
     }
 }
 
+
 async function logout() {
     try {
-        await httpService.post(BASE_AUTH_URL + 'logout')
-
+        await httpService.post(`${BASE_AUTH_URL}logout`)
         sessionStorage.removeItem(STORAGE_KEY_LOGGEDIN_USER)
     } catch (err) {
         console.error('Failed to logout', err)
@@ -107,11 +114,20 @@ function getEmptyUser() {
 }
 
 function saveLocalUser(user) {
-    user = { _id: user._id, fullname: user.fullname, isAdmin: user.isAdmin }
-    sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
-    return user
+    if (user) {
+        const minimalUser = {
+            _id: user._id,
+            fullname: user.fullname || 'Guest',
+            isAdmin: user.isAdmin || false
+        }
+        sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(minimalUser))
+        return minimalUser
+    } else {
+        console.error('Cannot save undefined user')
+        return null
+    }
 }
 
 function getLoggedinUser() {
-    return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER))
+    return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER)) || null
 }

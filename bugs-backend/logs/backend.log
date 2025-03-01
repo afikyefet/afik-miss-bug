@@ -1765,3 +1765,6 @@
     at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
     at Function.process_params (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
 2.3.2025, 0:53:04 - INFO - User login:  | {"_id":"qEV6eK","fullname":"a","score":1000,"isAdmin":true}
+2.3.2025, 0:54:41 - INFO - User login:  | {"_id":"qEV6eK","fullname":"a","score":1000,"isAdmin":true}
+2.3.2025, 0:59:59 - INFO - User login:  | {"_id":"qEV6eK","fullname":"a","score":1000,"isAdmin":true}
+2.3.2025, 1:00:05 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
