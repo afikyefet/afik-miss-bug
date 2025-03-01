@@ -1,13 +1,5 @@
 [
     {
-        "username": "ttt",
-        "password": "$2b$10$3YC9S.MjCZRVjQCaNHx9aey0Hcsh0d1XaaefSKtWjqAnXw5iz7QxS",
-        "fullname": "ttt",
-        "score": 1000,
-        "isAdmin": false,
-        "_id": "AbQ8zJ"
-    },
-    {
         "username": "aaa",
         "password": "$2b$10$h3gXqLRaJ.886drHluKke.LoPwMtERo.ho6XHKxVuP8TVqU8FdMP2",
         "fullname": "aaa",
