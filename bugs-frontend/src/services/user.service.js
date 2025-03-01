@@ -1,5 +1,6 @@
 
 import axios, { Axios } from 'axios'
+import { httpService } from './http.service'
 
 const myAxios = axios.create({
     withCredentials: true, // Send cookies with requests (if needed)
@@ -15,8 +16,8 @@ const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
 
 const BASE_URL = 'http://localhost:3333/api/'
 
-const BASE_USER_URL = BASE_URL + 'user/'
-const BASE_AUTH_URL = BASE_URL + 'auth/'
+const BASE_USER_URL = 'user/'
+const BASE_AUTH_URL = 'auth/'
 
 export const userService = {
     getUsers,
@@ -33,8 +34,7 @@ export const userService = {
 }
 async function getUsers() {
     try {
-        const { data: users } = await myAxios.get(BASE_USER_URL)
-        return users
+        return await httpService.get(BASE_USER_URL)
     } catch (err) {
         console.error('Failed to get users', err)
         throw err
@@ -42,35 +42,30 @@ async function getUsers() {
 }
 
 async function query() {
-    const { data: users } = await myAxios.get(BASE_USER_URL)
-    return users
+    return await httpService.get(BASE_USER_URL)
 }
 function getById(userId) {
-    return myAxios.get(BASE_USER_URL + userId)
-        .then(res => res.data)
+    return httpService.get(BASE_USER_URL + userId)
 }
 function remove(userId) {
-    return myAxios.delete(BASE_USER_URL + userId)
-        .then(res => res.data)
+    return httpService.delete(BASE_USER_URL + userId)
 }
 async function save(user) {
-    let response;
     if (user._id) {
-        response = await myAxios.put(BASE_USER_URL, user);
+        return await httpService.put(BASE_USER_URL, user);
     } else {
-        response = await myAxios.post(BASE_USER_URL, user);
+        return await httpService.post(BASE_USER_URL, user);
     }
-    return response.data;
 }
 
 async function login(credentials) {
     try {
-        const { data: user } = await myAxios.post(BASE_AUTH_URL + 'login', credentials)
-        console.log(user);
-        if (user) {
-            return saveLocalUser(user)
-        }
-
+        return await httpService.post(BASE_AUTH_URL + 'login', credentials)
+            .then((user) => {
+                if (user) {
+                    saveLocalUser(user)
+                }
+            })
     } catch (err) {
         console.error('Failed to login', err)
         throw err
@@ -79,8 +74,12 @@ async function login(credentials) {
 
 async function signup(credentials) {
     try {
-        const { data: user } = await myAxios.post(BASE_AUTH_URL + 'signup', credentials)
-        return saveLocalUser(user)
+        return await httpService.post(BASE_AUTH_URL + 'signup', credentials)
+            .then((user) => {
+                if (user) {
+                    saveLocalUser(user)
+                }
+            })
     } catch (err) {
         console.error('Failed to signup', err)
         throw err
@@ -89,7 +88,7 @@ async function signup(credentials) {
 
 async function logout() {
     try {
-        await myAxios.post(BASE_AUTH_URL + 'logout')
+        await httpService.post(BASE_AUTH_URL + 'logout')
 
         sessionStorage.removeItem(STORAGE_KEY_LOGGEDIN_USER)
     } catch (err) {
@@ -103,7 +102,6 @@ function getEmptyUser() {
         fullname: '',
         username: '',
         password: '',
-        imgUrl: '',
         score: 0,
     }
 }

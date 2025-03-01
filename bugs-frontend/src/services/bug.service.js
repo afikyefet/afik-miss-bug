@@ -2,6 +2,7 @@
 import axios, { Axios } from 'axios'
 import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
+import { httpService } from './http.service.js'
 
 const myAxios = axios.create({
     withCredentials: true, // Send cookies with requests (if needed)
@@ -21,7 +22,7 @@ const labels = [
 ]
 
 const STORAGE_KEY = 'bugDB'
-const BASE_URL = 'http://localhost:3333/api/bug/'
+const BASE_URL = 'bug/'
 
 export const bugService = {
     query,
@@ -35,27 +36,21 @@ export const bugService = {
 
 
 async function query(filterBy = {}) {
-    const { data: bugs } = await myAxios.get(BASE_URL, { params: filterBy })
-    return bugs
+    return await httpService.get(BASE_URL, { params: filterBy })
 }
 function getById(bugId) {
-    return myAxios.get(BASE_URL + bugId)
-        .then(res => res.data)
+    return httpService.get(BASE_URL + bugId)
 }
 function remove(bugId) {
-    return myAxios.delete(BASE_URL + bugId)
-        .then(res => res.data)
+    return httpService.delete(BASE_URL + bugId)
 }
 async function save(bug) {
     console.log(bug);
-
-    let response;
     if (bug._id) {
-        response = await myAxios.put(BASE_URL, bug);
+        return await httpService.put(BASE_URL, bug);
     } else {
-        response = await myAxios.post(BASE_URL, bug);
+        return await httpService.post(BASE_URL, bug);
     }
-    return response.data;
 }
 
 function getEmptyBug() {

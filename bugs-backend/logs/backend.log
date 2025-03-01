@@ -1681,3 +1681,87 @@
 1.3.2025, 3:30:12 - INFO - User login:  | {"_id":"qEV6eK","fullname":"a","score":1000,"isAdmin":true}
 1.3.2025, 3:30:22 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
 1.3.2025, 3:31:47 - INFO - Server ready at port 3333
+2.3.2025, 0:27:12 - INFO - Server ready at port 3333
+2.3.2025, 0:33:04 - ERROR - Couldn't get user with id undefined: Error: Bad user id: undefined
+2.3.2025, 0:33:04 - ERROR - Cannot get user | Error: Bad user id: undefined
+    at Object.getById (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.service.js:43:26)
+    at getUser (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.controller.js:17:36)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+2.3.2025, 0:33:07 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
+2.3.2025, 0:34:01 - ERROR - Couldn't get user with id undefined: Error: Bad user id: undefined
+2.3.2025, 0:34:01 - ERROR - Cannot get user | Error: Bad user id: undefined
+    at Object.getById (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.service.js:43:26)
+    at getUser (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.controller.js:17:36)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+2.3.2025, 0:34:22 - DEBUG - auth.route - new account created: {"username":"aaaa","password":"$2b$10$wi8EIklzxhE1U.MOLuAtOu5.Ih1iTYSciCd6cI3MpvToOGV7UPN2C","fullname":"aaaa","score":1000,"isAdmin":false,"_id":"TUsTP5"}
+2.3.2025, 0:34:22 - INFO - User signup: | {"_id":"TUsTP5","fullname":"aaaa","score":1000,"isAdmin":false}
+2.3.2025, 0:34:22 - INFO - Server ready at port 3333
+2.3.2025, 0:34:47 - ERROR - Couldn't get user with id undefined: Error: Bad user id: undefined
+2.3.2025, 0:34:47 - ERROR - Cannot get user | Error: Bad user id: undefined
+    at Object.getById (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.service.js:43:26)
+    at getUser (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.controller.js:17:36)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+2.3.2025, 0:35:00 - ERROR - Couldn't get user with id undefined: Error: Bad user id: undefined
+2.3.2025, 0:35:00 - ERROR - Cannot get user | Error: Bad user id: undefined
+    at Object.getById (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.service.js:43:26)
+    at getUser (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.controller.js:17:36)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+2.3.2025, 0:35:15 - ERROR - Couldn't get user with id undefined: Error: Bad user id: undefined
+2.3.2025, 0:35:15 - ERROR - Cannot get user | Error: Bad user id: undefined
+    at Object.getById (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.service.js:43:26)
+    at getUser (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.controller.js:17:36)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+2.3.2025, 0:35:32 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
+2.3.2025, 0:35:39 - INFO - User login:  | {"_id":"qEV6eK","fullname":"a","score":1000,"isAdmin":true}
+2.3.2025, 0:35:50 - INFO - User login:  | {"_id":"8UsZkq","fullname":"aa","score":1000,"isAdmin":false}
+2.3.2025, 0:37:04 - INFO - User login:  | {"_id":"qEV6eK","fullname":"a","score":1000,"isAdmin":true}
+2.3.2025, 0:37:58 - INFO - User login:  | {"_id":"qEV6eK","fullname":"a","score":1000,"isAdmin":true}
+2.3.2025, 0:52:26 - INFO - User login:  | {"_id":"qEV6eK","fullname":"a","score":1000,"isAdmin":true}
+2.3.2025, 0:53:00 - ERROR - Couldn't get user with id undefined: Error: Bad user id: undefined
+2.3.2025, 0:53:00 - ERROR - Cannot get user | Error: Bad user id: undefined
+    at Object.getById (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.service.js:43:26)
+    at getUser (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/user/user.controller.js:17:36)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:421:3)
+2.3.2025, 0:53:04 - INFO - User login:  | {"_id":"qEV6eK","fullname":"a","score":1000,"isAdmin":true}

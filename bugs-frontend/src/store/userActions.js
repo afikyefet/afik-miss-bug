@@ -111,6 +111,7 @@ export async function login(user) {
     const loggedInUser = await userService.login(user)
 
     await store.dispatch({ type: SET_LOGGED_IN_USER, user: loggedInUser })
+    console.log('user', loggedInUser);
 
     showSuccessMsg('welcome ' + loggedInUser.fullname)
   } catch (error) {
