@@ -1,3 +1,4 @@
+import { dbService } from "../../services/db.service.js";
 import { loggerService } from "../../services/logger.service.js";
 import { makeId, readJsonFile, writeJsonFile } from "../../services/utils.js";
 
@@ -15,40 +16,46 @@ const PAGE_SIZE = 4
 async function query(filterBy = {}) {
 
     try {
-        let filteredBugs = bugs
-        if (filterBy.title && filterBy.title.trim()) {
-            const titleLower = filterBy.title.toLowerCase()
-            filteredBugs = filteredBugs.filter(bug =>
-                bug.title && bug.title.toLowerCase().includes(titleLower)
-            )
-        }
-        if (filterBy.description && filterBy.description.trim()) {
-            const descLower = filterBy.description.toLowerCase()
-            filteredBugs = filteredBugs.filter(bug =>
-                bug.description && bug.description.toLowerCase().includes(descLower)
-            )
-        }
-        if (filterBy.severity !== undefined && filterBy.severity !== null && filterBy.severity !== "") {
-            const severityNum = +filterBy.severity
-            filteredBugs = filteredBugs.filter(bug =>
-                +bug.severity >= severityNum
-            )
-        }
-        if (filterBy.labels && filterBy.labels.length) {
-            filteredBugs = filteredBugs.filter(bug => {
-                if (!bug.labels || !Array.isArray(bug.labels)) return false;
-                return filterBy.labels.some(label => bug.labels.includes(label));
-            });
-        }
-        if (filterBy.sortBy) {
-            filteredBugs.sort((a, b) => {
-                const aVal = a[filterBy.sortBy] !== undefined ? a[filterBy.sortBy] : 0
-                const bVal = b[filterBy.sortBy] !== undefined ? b[filterBy.sortBy] : 0
-                if (aVal < bVal) return filterBy.descending ? 1 : -1
-                if (aVal > bVal) return filterBy.descending ? -1 : 1
-                return 0
-            })
-        }
+        const criteria = _buildCriteria(filterBy)
+        const sort = _buildSort(filterBy)
+
+        const collection = await dbService.getCollection('bugsDB')
+
+        let filteredBugs = await collection.find(criteria).sort(sort).toArray()
+        // let filteredBugs = bugs
+        // if (filterBy.title && filterBy.title.trim()) {
+        //     const titleLower = filterBy.title.toLowerCase()
+        //     filteredBugs = filteredBugs.filter(bug =>
+        //         bug.title && bug.title.toLowerCase().includes(titleLower)
+        //     )
+        // }
+        // if (filterBy.description && filterBy.description.trim()) {
+        //     const descLower = filterBy.description.toLowerCase()
+        //     filteredBugs = filteredBugs.filter(bug =>
+        //         bug.description && bug.description.toLowerCase().includes(descLower)
+        //     )
+        // }
+        // if (filterBy.severity !== undefined && filterBy.severity !== null && filterBy.severity !== "") {
+        //     const severityNum = +filterBy.severity
+        //     filteredBugs = filteredBugs.filter(bug =>
+        //         +bug.severity >= severityNum
+        //     )
+        // }
+        // if (filterBy.labels && filterBy.labels.length) {
+        //     filteredBugs = filteredBugs.filter(bug => {
+        //         if (!bug.labels || !Array.isArray(bug.labels)) return false;
+        //         return filterBy.labels.some(label => bug.labels.includes(label));
+        //     });
+        // }
+        // if (filterBy.sortBy) {
+        //     filteredBugs.sort((a, b) => {
+        //         const aVal = a[filterBy.sortBy] !== undefined ? a[filterBy.sortBy] : 0
+        //         const bVal = b[filterBy.sortBy] !== undefined ? b[filterBy.sortBy] : 0
+        //         if (aVal < bVal) return filterBy.descending ? 1 : -1
+        //         if (aVal > bVal) return filterBy.descending ? -1 : 1
+        //         return 0
+        //     })
+        // }
 
         if (filterBy.pageIdx !== undefined) {
             const startIdx = +filterBy.pageIdx * PAGE_SIZE
@@ -114,4 +121,39 @@ async function save(bug, loggedinUser) {
         loggerService.error(`Error in bugService.save: ${error}`);
         throw error;
     }
+}
+
+function _buildCriteria(filterBy) {
+    const criteria = {}
+
+    // Filter by title (case insensitive)
+    if (filterBy.title && filterBy.title.trim()) {
+        criteria.title = { $regex: filterBy.title.trim(), $options: 'i' }
+    }
+
+    // Filter by description (case insensitive)
+    if (filterBy.description && filterBy.description.trim()) {
+        criteria.description = { $regex: filterBy.description.trim(), $options: 'i' }
+    }
+
+    // Filter by severity (greater than or equal)
+    if (filterBy.severity !== undefined && filterBy.severity !== null && filterBy.severity !== "") {
+        criteria.severity = { $gte: +filterBy.severity }
+    }
+
+    // Filter by labels (at least one label must match)
+    if (filterBy.labels && filterBy.labels.length) {
+        criteria.labels = { $in: filterBy.labels }
+    }
+
+    return criteria
+}
+
+function _buildSort(filterBy) {
+    const sort = {}
+    if (filterBy.sortBy) {
+        const direction = filterBy.descending ? -1 : 1
+        sort[filterBy.sortBy] = direction
+    }
+    return sort
 }
