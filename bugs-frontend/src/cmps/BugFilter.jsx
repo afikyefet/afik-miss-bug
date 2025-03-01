@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { bugService } from "../services/bug.service"
 
-export function BugFilter({ filterBy, setFilterBy }) {
+export function BugFilter({ filterBy, setFilterBy, onSetFilterBy }) {
 	const [showLabelsDropdown, setShowLabelsDropdown] = useState(false)
 	const labels = bugService.getLabelsList()
 
@@ -16,8 +16,6 @@ export function BugFilter({ filterBy, setFilterBy }) {
 	}
 
 	function handleLabelChange({ target }) {
-		console.log(filterBy)
-
 		const { value, checked } = target
 		setFilterBy(prevFilter => {
 			const currentLabels = prevFilter.labels || []

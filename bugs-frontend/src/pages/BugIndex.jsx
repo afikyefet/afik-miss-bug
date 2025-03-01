@@ -6,16 +6,25 @@ import { useEffect } from 'react'
 import { debounce } from '../services/util.service.js'
 import { BugFilter } from '../cmps/BugFilter.jsx'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import { loadUser } from '../store/userActions.js'
+import { userService } from '../services/user.service.js'
+import { use } from 'react'
 
 
 export function BugIndex() {
   const [bugs, setBugs] = useState([])
   const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
   const onSetFilterBy = useCallback(debounce(_onSetFilterBy, 350), [])
+  const loggedInUser = useSelector(state => state.userModule.loggedInUser)
 
   useEffect(() => {
     loadBugs(filterBy)
+    loadUser(userService.getLoggedinUser()?._id)
   }, [filterBy])
+
+  useEffect(() => {
+  }, [loggedInUser])
 
   function _onSetFilterBy(filterBy) {
     setFilterBy(prevFilter => ({ ...prevFilter, ...filterBy }))
@@ -38,23 +47,6 @@ export function BugIndex() {
     }
   }
 
-  async function onAddBug() {
-    const bug = {
-      title: prompt('Bug title?'),
-      severity: +prompt('Bug severity?'),
-      description: prompt('Bug description?'),
-    }
-    try {
-      const savedBug = await bugService.save(bug)
-      console.log('Added Bug', savedBug)
-      setBugs(prevBugs => [...prevBugs, savedBug])
-      showSuccessMsg('Bug added')
-    } catch (err) {
-      console.log('Error from onAddBug ->', err)
-      showErrorMsg('Cannot add bug')
-    }
-  }
-
   async function onEditBug(bug) {
     const severity = +prompt('New severity?')
     const bugToSave = { ...bug, severity }
@@ -72,14 +64,30 @@ export function BugIndex() {
     }
   }
 
+  function onChangePageIdx(pageIdx) {
+    setFilterBy(prevFilter => ({ ...prevFilter, pageIdx: pageIdx }))
+  }
+
   if (!bugs) return <div>Loading...</div>
+
+  const isPaging = filterBy.pageIdx !== undefined
 
   return (
     <main className="main-layout">
       <h3>Bugs App</h3>
       <main>
+        <div className="bug-pagination">
+          <label> Use paging
+            <input type="checkbox" checked={isPaging} onChange={() => onChangePageIdx(isPaging ? undefined : 0)} />
+          </label>
+          {isPaging && <>
+            <button disabled={filterBy.pageIdx <= 0} onClick={() => onChangePageIdx(filterBy.pageIdx - 1)}>-</button>
+            <span>{filterBy.pageIdx + 1}</span>
+            <button disabled={bugs == 0} onClick={() => onChangePageIdx(filterBy.pageIdx + 1)}>+</button>
+          </>}
+        </div>
         <Link to='/bug/edit'>Add Bug ⛐</Link>
-        <BugFilter filterBy={filterBy} setFilterBy={setFilterBy} />
+        <BugFilter filterBy={filterBy} setFilterBy={setFilterBy} onSetFilterBy={onSetFilterBy} />
         <BugList bugs={bugs} onRemoveBug={onRemoveBug} onEditBug={onEditBug} />
       </main>
     </main>

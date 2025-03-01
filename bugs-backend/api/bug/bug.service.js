@@ -10,7 +10,10 @@ export const bugService = {
 
 const bugs = readJsonFile('./data/bugs.json')
 
+const PAGE_SIZE = 4
+
 async function query(filterBy = {}) {
+
     try {
         let filteredBugs = bugs
         if (filterBy.title && filterBy.title.trim()) {
@@ -33,9 +36,9 @@ async function query(filterBy = {}) {
         }
         if (filterBy.labels && filterBy.labels.length) {
             filteredBugs = filteredBugs.filter(bug => {
-                if (!bug.labels || !Array.isArray(bug.labels)) return false
-                return filterBy.labels.every(label => bug.labels.includes(label))
-            })
+                if (!bug.labels || !Array.isArray(bug.labels)) return false;
+                return filterBy.labels.some(label => bug.labels.includes(label));
+            });
         }
         if (filterBy.sortBy) {
             filteredBugs.sort((a, b) => {
@@ -46,8 +49,13 @@ async function query(filterBy = {}) {
                 return 0
             })
         }
+
+        if (filterBy.pageIdx !== undefined) {
+            const startIdx = +filterBy.pageIdx * PAGE_SIZE
+            filteredBugs = filteredBugs.slice(startIdx, startIdx + PAGE_SIZE)
+        }
+
         return filteredBugs
-        return bugs
     } catch (error) {
         loggerService.error(`Couldn't get bugs: ${error}`)
         throw error
@@ -70,7 +78,7 @@ async function getById(bugId) {
 async function remove(bugId, loggedinUser) {
     try {
         const bugToRemove = await getById(bugId)
-        if (!loggedinUser.isAdmin && bugToRemove?.owner?._id !== loggedinUser._id) throw 'Cant remove bug'
+        if (!loggedinUser.isAdmin && bugToRemove?.creator?._id !== loggedinUser._id) throw 'Cant remove bug'
         const idx = bugs.findIndex(bug => bug._id === bugId);
         if (idx === -1) throw new Error(`Bad bug id: ${bugId}`);
         bugs.splice(idx, 1);

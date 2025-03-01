@@ -4,17 +4,20 @@ import { UserMsg } from './UserMsg'
 import { NavLink } from 'react-router-dom'
 import { userService } from '../services/user.service'
 import { LoginSignup } from './LoginSignup'
-import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
+import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
+import { login, logout, signUp } from '../store/userActions.js'
+import { useSelector } from 'react-redux'
+import { use } from 'react'
 
 export function AppHeader() {
 
-  const [loggedinUser, setLoggedinUser] = useState(userService.getLoggedinUser())
+  const loggedInUser = useSelector(state => state.userModule.loggedInUser)
 
   async function onLogin(credentials) {
     console.log(credentials)
     try {
-      const user = await userService.login(credentials)
-      setLoggedinUser(user)
+      await login(credentials)
+      showSuccessMsg(`Welcome!`)
     } catch (err) {
       console.log('Cannot login :', err)
       showErrorMsg(`Cannot login`)
@@ -24,9 +27,8 @@ export function AppHeader() {
   async function onSignup(credentials) {
     console.log(credentials)
     try {
-      const user = await userService.signup(credentials)
-      setLoggedinUser(user)
-      showSuccessMsg(`Welcome ${user.fullname}`)
+      await signUp(credentials)
+      showSuccessMsg(`Welcome!`)
     } catch (err) {
       console.log('Cannot signup :', err)
       showErrorMsg(`Cannot signup`)
@@ -35,8 +37,8 @@ export function AppHeader() {
 
   async function onLogout() {
     try {
-      await userService.logout()
-      setLoggedinUser(null)
+      await logout()
+      showSuccessMsg('Logged out')
     } catch (err) {
       console.log('can not logout');
     }
@@ -47,10 +49,10 @@ export function AppHeader() {
       <div className='header-container'>
         <UserMsg />
         <section className="login-signup-container">
-          {!loggedinUser && <LoginSignup onLogin={onLogin} onSignup={onSignup} />}
+          {!loggedInUser && <LoginSignup onLogin={onLogin} onSignup={onSignup} />}
 
-          {loggedinUser && <div className="user-preview">
-            <h3>Hello {loggedinUser.fullname}</h3>
+          {loggedInUser && <div className="user-preview">
+            <h3>Hello {loggedInUser.fullname}</h3>
             <button onClick={onLogout}>Logout</button>
           </div>}
         </section>

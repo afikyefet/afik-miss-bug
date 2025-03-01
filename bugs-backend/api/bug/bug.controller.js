@@ -3,14 +3,26 @@ import { bugService } from "./bug.service.js";
 
 export async function getBugs(req, res) {
   try {
-    const { title, severity, description, labels, sortBy, descending } = req.query
+    const { title, severity, description, sortBy, descending, pageIdx } = req.query
+    let labels = req.query.labels;
+    // Normalize labels: if it's a string, split it by comma; if it's already an array, use it as is; otherwise, default to an empty array.
+    if (labels) {
+      if (typeof labels === 'string') {
+        labels = labels.split(',');
+      } else if (!Array.isArray(labels)) {
+        labels = [labels];
+      }
+    } else {
+      labels = [];
+    }
     const filterBy = {
       title,
       severity: severity ? +severity : undefined,
       description,
-      labels: labels ? labels.split(',') : [],
+      labels,
       sortBy,
-      descending: descending === 'true'
+      descending: descending === 'true',
+      pageIdx: pageIdx ? +pageIdx : undefined
     }
     const bugs = await bugService.query(filterBy)
     res.send(bugs)
@@ -46,8 +58,9 @@ export async function addBug(req, res) {
     // console.log(req);
 
 
-    // const { title, description, severity, labels = [] } = req.body
-    const bugToSave = { ...res.body, severity: +req.body.severity }
+    const { title, description, severity, labels = [] } = req.body
+    // const bugToSave = { ...res.body, severity: +req.body.severity }
+    const bugToSave = { title, labels, description, severity: +severity }
     const savedBug = await bugService.save(bugToSave, loggedinUser)
     res.send(savedBug)
   } catch (err) {

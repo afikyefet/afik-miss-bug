@@ -76,5 +76,5 @@ function getLabelsList() {
 }
 
 function getDefaultFilter() {
-    return { title: '', description: '', labels: [], severity: 0 }
+    return { title: '', description: '', labels: [], severity: 0, pageIdx: undefined }
 }
