@@ -1,15 +1,13 @@
-import { bugService } from '../services/bug.service.js'
-import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
-import { BugList } from '../cmps/BugList.jsx'
-import { useCallback, useState } from 'react'
-import { useEffect } from 'react'
-import { debounce } from '../services/util.service.js'
-import { BugFilter } from '../cmps/BugFilter.jsx'
-import { Link } from 'react-router-dom'
+import { useCallback, useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { BugFilter } from '../cmps/BugFilter.jsx'
+import { BugList } from '../cmps/BugList.jsx'
+import { bugService } from '../services/bug/index.js'
+import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
+import { userService } from '../services/user/user.service.remote.js'
+import { debounce } from '../services/util.service.js'
 import { loadUser } from '../store/userActions.js'
-import { userService } from '../services/user.service.js'
-import { use } from 'react'
 
 
 export function BugIndex() {

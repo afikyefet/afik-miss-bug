@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router"
 
-import { bugService } from "../services/bug.service.js"
+import { bugService } from "../services/bug/index.js"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
 
 export function BugEdit() {

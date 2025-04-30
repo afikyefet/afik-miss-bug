@@ -1,6 +1,6 @@
 
-import axios, { Axios } from 'axios'
-import { httpService } from './http.service'
+import axios from 'axios'
+import { httpService } from '../http.service'
 
 const myAxios = axios.create({
     withCredentials: true, // Send cookies with requests (if needed)

@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { userService } from '../services/user.service.js'
+import { useEffect, useState } from 'react'
+import { userService } from '../services/user/index.js'
 
 export function LoginSignup({ onSignup, onLogin }) {
     const [users, setUsers] = useState([])

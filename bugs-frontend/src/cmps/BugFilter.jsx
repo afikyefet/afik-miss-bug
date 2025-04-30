@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { bugService } from "../services/bug.service"
+import { bugService } from "../services/bug/index.js"
 
 export function BugFilter({ filterBy, setFilterBy, onSetFilterBy }) {
 	const [showLabelsDropdown, setShowLabelsDropdown] = useState(false)

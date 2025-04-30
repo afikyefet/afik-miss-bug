@@ -1,8 +1,7 @@
-import { userService } from '../services/user.service.js'
-import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
+import { useEffect, useState } from 'react'
 import { UserList } from '../cmps/UserList.jsx'
-import { useCallback, useState } from 'react'
-import { useEffect } from 'react'
+import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
+import { userService } from '../services/user/index.js'
 
 
 export function UserIndex() {

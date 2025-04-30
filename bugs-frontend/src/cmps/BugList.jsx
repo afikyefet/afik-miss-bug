@@ -1,7 +1,7 @@
 
-import { Link } from 'react-router-dom'
-import { BugPreview } from './BugPreview'
-import { userService } from '../services/user.service';
+import { Link } from 'react-router-dom';
+import { userService } from '../services/user/user.service.remote';
+import { BugPreview } from './BugPreview';
 
 export function BugList({ bugs, onRemoveBug, onEditBug }) {
 

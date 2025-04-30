@@ -1,10 +1,10 @@
 
-import { useState } from 'react'
-import { bugService } from '../services/bug.service.js'
-import { showErrorMsg } from '../services/event-bus.service.js'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+
+import { showErrorMsg } from '../services/event-bus.service.js'
+import { bugService } from '../services/bug/index.js'
 
 
 export function BugDetails() {

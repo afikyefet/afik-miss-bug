@@ -1,12 +1,6 @@
+import { storageService } from "../async-storage.service"
 
-import axios, { Axios } from 'axios'
-import { storageService } from './async-storage.service.js'
-import { utilService } from './util.service.js'
-import { httpService } from './http.service.js'
 
-const myAxios = axios.create({
-    withCredentials: true, // Send cookies with requests (if needed)
-})
 
 
 const labels = [
@@ -22,7 +16,6 @@ const labels = [
 ]
 
 const STORAGE_KEY = 'bugDB'
-const BASE_URL = 'bug/'
 
 export const bugService = {
     query,
@@ -36,20 +29,20 @@ export const bugService = {
 
 
 async function query(filterBy = {}) {
-    return await httpService.get(BASE_URL, { params: filterBy })
+    return await storageService.query(STORAGE_KEY)
 }
 function getById(bugId) {
-    return httpService.get(BASE_URL + bugId)
+    return storageService.get(STORAGE_KEY, bugId)
 }
 function remove(bugId) {
-    return httpService.delete(BASE_URL + bugId)
+    return storageService.remove(STORAGE_KEY, bugId)
 }
 async function save(bug) {
     console.log(bug);
     if (bug._id) {
-        return await httpService.put(BASE_URL, bug);
+        return await storageService.put(STORAGE_KEY, bug);
     } else {
-        return await httpService.post(BASE_URL, bug);
+        return await storageService.post(STORAGE_KEY, bug);
     }
 }
 

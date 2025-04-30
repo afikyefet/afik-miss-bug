@@ -1,13 +1,13 @@
-import { userService } from '../services/user.service.js'
+import { userService } from '../services/user/index.js'
 import { store } from './store.js'
 
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
 
 import {
-  SET_USERS,
-  REMOVE_USER,
   EDIT_USER,
+  REMOVE_USER,
   SET_LOGGED_IN_USER,
+  SET_USERS,
 } from './userReducer.js'
 
 export async function loadusers(filter = {}) {
