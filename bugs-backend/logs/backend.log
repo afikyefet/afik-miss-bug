@@ -1828,3 +1828,18 @@
     at Function.process_params (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:346:12)
     at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\index.js:280:10)
 2.3.2025, 1:27:30 - INFO - Server ready at port 3333
+2.3.2025, 1:27:48 - ERROR - Couldn't get bug with id 67c3928b7889be5301bba183: Error: Bad bug id: 67c3928b7889be5301bba183
+2.3.2025, 1:27:48 - ERROR - Error in bugService.remove: Error: Bad bug id: 67c3928b7889be5301bba183
+2.3.2025, 1:27:48 - ERROR - Cannot remove bug | Error: Bad bug id: 67c3928b7889be5301bba183
+    at getById (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.service.js:77:25)
+    at Object.remove (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.service.js:87:35)
+    at removeBug (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/api/bug/bug.controller.js:91:22)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at requireAuth (file:///D:/%D7%90%D7%A4%D7%99%D7%A7/%D7%90%D7%A4%D7%99%D7%A7%20%D7%9E%D7%AA%D7%9B%D7%A0%D7%AA/Coding%20Academy/Day09-NodeExpress/Afik-miss-bug/bugs-backend/middlewares/require-auth.middleware.js:10:5)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\אפיק\אפיק מתכנת\Coding Academy\Day09-NodeExpress\Afik-miss-bug\bugs-backend\node_modules\express\lib\router\layer.js:95:5)
+2.3.2025, 1:28:08 - INFO - Server ready at port 3333
+2.3.2025, 1:28:21 - INFO - Server ready at port 3333
